@@ -1,0 +1,170 @@
+.containerPainel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    min-height: 75%;
+    max-height: 50000px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border: 25px solid white;
+    margin-top: 50px;
+    border: 1px solid rgb(228, 225, 225);
+    border-bottom: 25px solid rgb(255, 255, 255);
+}
+
+.painel{
+    width: 90%;
+    height: 100%;
+}
+
+.headerBotoes, .headerPainel, .linha{
+    height: 45px;
+    width: 100%;
+    display: flex;
+}
+
+.headerBotoes{
+    position: relative;
+    width: 90%;
+    height: 70px;
+    justify-content: right;
+    align-items: center;
+}
+
+.ordenar, .imgOrdenar{
+    position: absolute;
+    left: 0px;
+}
+
+.imgOrdenar{
+    left: 7.5px;
+}
+
+.ordenar{
+    cursor: pointer;
+    width: 22%;
+    height: 50%;
+    border: 1px solid rgb(209, 205, 205);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    padding-left: 5px;
+    padding-left: 25px;
+    color: rgb(99, 96, 96);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+.inputPesquisar{
+    height: 50%;
+    width: 35%;
+    border-radius: 5px;
+    border: 1px solid rgb(209, 205, 205);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    padding-left: 15px;
+}
+
+.buscar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    right: 20px;
+    border: none;
+}
+
+.colunaPrincipal-1, .colunaPrincipal-2, .colunaPrincipal-3, .colunaPrincipal-4{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    background: rgb(30, 168, 122);
+    border-left: 2px solid white;
+    border-radius: 4px;
+}
+
+.colunaPrincipal-2{
+    width: 10%;
+}
+
+
+.colunaPrincipal-3{
+    width: 40%;
+}
+
+.colunaPrincipal-4{
+    width: 25%;
+}
+
+.subtituloHeader{
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.dados{
+    width: 100%;
+    height: 80%;
+}
+
+.coluna-1, .coluna-2, .coluna-3, .coluna-4{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    background: rgb(255, 255, 255);
+    border-left: 2px solid white;
+}
+
+.coluna-2{
+    width: 10%;
+}
+
+
+.coluna-3{
+    width: 40%;
+}
+
+.coluna-4{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+}
+
+.texto{
+    color: rgb(99, 96, 96);
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.editar, .excluir{
+    width: 40%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(14, 108, 216);
+    color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.excluir{
+    margin-left: 5px;
+    background: rgb(229, 44, 44);
+}
+
+.editar:hover{
+    background: rgb(7, 69, 140);
+
+}
+
+.excluir:hover{
+    background: rgb(180, 27, 27);
+
+}

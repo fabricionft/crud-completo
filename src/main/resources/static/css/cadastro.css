@@ -1,0 +1,125 @@
+body{
+    background: rgb(239, 239, 247);
+    margin: 0;
+}
+
+.container{
+    min-height: 600px;
+    max-height: 10000px;
+    width: 100%;
+    display: flex;
+}
+
+.margem{height: 50px;}
+
+.cadastro, .exibicao{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 600px;
+    width: 30%;
+}
+
+.cadastro{
+    justify-content: right;
+}
+
+.exibicao{
+    width: 70%;
+}
+
+.formCRUD{
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 250px;
+    width: 80%;
+    border: 1px solid rgb(228, 225, 225);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 12px;
+    margin-top: 50px;
+}
+
+.headerCRUD{
+    height: 15%;
+    width: 100%;
+}
+
+.divisor1, .divisor2, .divisor3{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 59%;
+}
+
+.divisor2{
+    width: 20%;
+}
+
+.divisor3{
+    width: 80%;
+}
+
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(77, 75, 75);
+}
+
+.inputNome, .inputIdade, .inputEmail{
+    width: 85%;
+    height: 40%;
+    border-radius: 5px;
+    border: 1px solid rgb(209, 205, 205);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    color: rgb(99, 96, 96);
+    padding-left: 10px;
+}
+
+.inputIdade, .inputEmail{
+    width: 80%;
+}
+
+.inputEmail{
+    width: 95%;
+}
+
+.inputCodigo{
+    opacity: 0;
+}
+
+.footerCRUD{
+    height: 25%;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.limpar, .salvar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 50%;
+    background: rgb(14, 108, 216);
+    color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.salvar{
+    margin-left: 15px;
+    background: green;
+}
+
+.limpar:hover{
+    background: rgb(23, 77, 184);
+}
+
+.salvar:hover{
+    background: rgb(4, 92, 4);
+}

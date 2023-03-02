@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/painel.css">
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+        crossorigin="anonymous" defer>
+    </script>
+
+    <script src="js/painel.js"></script>
+    <script src="js/cadastro.js"></script>
+
+</head>
+<body>
+    <main class="container">
+        <section class="cadastro">
+            <form class="formCRUD">
+                <header class="headerCRUD">
+                    <input type="number" class="inputCodigo" id="codigo">
+                </header>
+
+                <div class="divisor1">
+                    <label >Nome</label>
+                    <input type="text" name="nome" id="nome" class="inputNome">
+                </div>
+                <div class="divisor2">
+                    <label >Idade</label>
+                    <input type="number" name="idade" id="idade" class="inputIdade">
+                </div>
+                <div class="divisor3">
+                    <label >Email</label>
+                    <input type="email" name="email" id="email" class="inputEmail">
+                </div>
+
+                <footer class="footerCRUD">
+                    <button class="limpar">Limpar</button>
+                    <button class="salvar" onclick="verificar()">Salvar</button>
+                </footer>
+            </form>
+
+        </section>
+
+        <section class="exibicao">
+            <div class="containerPainel">
+                <header class="headerBotoes">
+                    <select class="ordenar" id="ordenar" onclick="ordenar()">
+                        <option value="">Ordenar por</option>
+                        <option value="nome">Nome</option>
+                        <option value="idade">Idade</option>
+                    </select>
+                    <img src="img/ordenar.png" width="18px" class="imgOrdenar">
+
+                    <input type="text" id="pesquisar" class="inputPesquisar" placeholder="Pesquise um nome">
+                    <button class="buscar" onclick="pesquisar()">
+                        <img src="img/lupa.png" width="24px">
+                    </button>
+                </header>
+
+                <div class="painel">
+                    <header class="headerPainel">
+                        <div class="colunaPrincipal-1"><p class="subtituloHeader">Nome</p></div>
+                        <div class="colunaPrincipal-2"><p class="subtituloHeader">Idade</p></div>
+                        <div class="colunaPrincipal-3"><p class="subtituloHeader">Email</p></div>
+                        <div class="colunaPrincipal-4"><p class="subtituloHeader">Ação</p></div>
+                    </header>
+
+                    <div class="dados" id="dados">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="margem"></footer>
+</body>
+</html>
