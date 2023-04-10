@@ -1,0 +1,38 @@
+body{
+    background: rgb(239, 239, 247);
+    margin: 0;
+}
+
+.container{
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+}
+
+.margem{height: 50px;}
+
+.cadastro, .exibicao{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 30%;
+}
+
+.cadastro{
+    justify-content: right;
+}
+
+.exibicao{
+    width: 70%;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cadastro, .exibicao{
+        width: 90%;
+    }
+}

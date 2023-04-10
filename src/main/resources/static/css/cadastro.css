@@ -1,0 +1,105 @@
+.formCRUD{
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 250px;
+    width: 80%;
+    border: 1px solid rgb(228, 225, 225);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 12px;
+    margin-top: 50px;
+}
+
+.headerCRUD{
+    height: 15%;
+    width: 100%;
+}
+
+.divisor1, .divisor2, .divisor3{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 59%;
+}
+
+.divisor2{
+    width: 20%;
+}
+
+.divisor3{
+    width: 80%;
+}
+
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(77, 75, 75);
+}
+
+.inputNome, .inputIdade, .inputEmail{
+    width: 85%;
+    height: 42%;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid rgb(233, 244, 251);
+    background: rgb(10, 117, 248, 0.06);
+    color: rgb(118, 118, 118);
+    padding-left: 10px;
+}
+
+.inputIdade, .inputEmail{
+    width: 80%;
+}
+
+.inputEmail{
+    width: 95%;
+}
+
+.inputCodigo{
+    opacity: 0;
+}
+
+.footerCRUD{
+    height: 25%;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.salvar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 50%;
+    background: rgb(30, 168, 122);
+    color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.salvar:hover{
+    background: rgb(18, 135, 96);
+}
+
+@media screen and (max-width: 800px){
+    .formCRUD{
+        width: 100%;
+    }
+
+    .divisor1{width: 70%;}
+    .divisor3{width: 90%;}
+
+    .footerCRUD{
+        width: 90%;
+    }
+
+    .salvar{
+        width: 100%;
+    }
+}
