@@ -1,8 +1,8 @@
-package com.crud.crud.Service;
+package com.crud.crud.service;
 
-import com.crud.crud.Exceptions.RequestException;
-import com.crud.crud.Model.PessoaModel;
-import com.crud.crud.Repository.PessoaRepository;
+import com.crud.crud.exceptions.RequestException;
+import com.crud.crud.model.PessoaModel;
+import com.crud.crud.repository.PessoaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
@@ -39,7 +39,7 @@ public class PessoaService {
     public String salvar(PessoaModel pessoa){
         for(PessoaModel person: repository.findAll())
             if(person.getEmail().equals(pessoa.getEmail()) && pessoa.getCodigo() == null)
-                throw new RequestException("O email digitadi já é utilizado, por favor digite outro!");
+                throw new RequestException("O email digitado já é utilizado, por favor digite outro!");
 
         repository.save(pessoa);
         return "USuário salvo com sucesso!";

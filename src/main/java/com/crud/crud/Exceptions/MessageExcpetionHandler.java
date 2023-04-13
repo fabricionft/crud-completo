@@ -1,4 +1,4 @@
-package com.crud.crud.Exceptions;
+package com.crud.crud.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

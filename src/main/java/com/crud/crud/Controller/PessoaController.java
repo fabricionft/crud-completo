@@ -1,7 +1,7 @@
-package com.crud.crud.Controller;
+package com.crud.crud.controller;
 
-import com.crud.crud.Model.PessoaModel;
-import com.crud.crud.Service.PessoaService;
+import com.crud.crud.model.PessoaModel;
+import com.crud.crud.service.PessoaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,23 +18,23 @@ public class PessoaController {
 
 
     @GetMapping
-    public List<PessoaModel> listar(){
-        return service.listar();
+    public ResponseEntity<?> listar(){
+        return  new ResponseEntity<>(service.listar(), HttpStatus.OK);
     }
 
     @GetMapping(path = "/ordemAlfabetica")
-    public List<PessoaModel> listarPorOrdem(){
-        return service.listarPorOrdemAlfabetica();
+    public ResponseEntity<?> listarPorOrdem(){
+        return  new ResponseEntity<>(service.listarPorOrdemAlfabetica(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/ordemIdade")
-    public List<PessoaModel> listarPorIdade(){
-        return service.listarPorIdade();
+    public ResponseEntity<?> listarPorIdade(){
+        return  new ResponseEntity<>(service.listarPorIdade(), HttpStatus.OK);
     }
 
     @GetMapping(path = "/trecho/{trecho}")
-    public List<PessoaModel> buscrPorParte(@PathVariable String trecho){
-        return service.buscrPortrecho(trecho);
+    public ResponseEntity<?> buscrPorParte(@PathVariable String trecho){
+        return  new ResponseEntity<>(service.buscrPortrecho(trecho), HttpStatus.OK);
     }
 
     @GetMapping(path = "/{codigo}")
