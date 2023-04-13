@@ -1,4 +1,4 @@
-package com.crud.crud.exceptions;
+package com.crud.crud.ae;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,7 +12,6 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class MessageExcpetionHandler{
-
     private Integer status;
     private Date timestamp;
     private String error;

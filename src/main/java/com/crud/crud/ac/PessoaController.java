@@ -1,13 +1,11 @@
-package com.crud.crud.controller;
+package com.crud.crud.ac;
 
-import com.crud.crud.model.PessoaModel;
-import com.crud.crud.service.PessoaService;
+import com.crud.crud.am.PessoaModel;
+import com.crud.crud.as.PessoaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/pessoa")

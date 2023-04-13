@@ -1,8 +1,8 @@
-package com.crud.crud.service;
+package com.crud.crud.as;
 
-import com.crud.crud.exceptions.RequestException;
-import com.crud.crud.model.PessoaModel;
-import com.crud.crud.repository.PessoaRepository;
+import com.crud.crud.ae.RequestException;
+import com.crud.crud.am.PessoaModel;
+import com.crud.crud.ar.PessoaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;

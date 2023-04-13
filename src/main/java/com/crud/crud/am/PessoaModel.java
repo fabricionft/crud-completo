@@ -1,4 +1,4 @@
-package com.crud.crud.model;
+package com.crud.crud.am;
 
 import jakarta.persistence.*;
 import lombok.Getter;

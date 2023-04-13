@@ -1,6 +1,6 @@
-package com.crud.crud.repository;
+package com.crud.crud.ar;
 
-import com.crud.crud.model.PessoaModel;
+import com.crud.crud.am.PessoaModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
