@@ -1,4 +1,4 @@
-package com.crud.crud.ae;
+package com.crud.crud.exception;
 
 public class RequestException extends  RuntimeException{
 

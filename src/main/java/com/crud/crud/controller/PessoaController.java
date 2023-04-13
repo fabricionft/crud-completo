@@ -1,7 +1,7 @@
-package com.crud.crud.ac;
+package com.crud.crud.controller;
 
-import com.crud.crud.am.PessoaModel;
-import com.crud.crud.as.PessoaService;
+import com.crud.crud.model.PessoaModel;
+import com.crud.crud.service.PessoaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

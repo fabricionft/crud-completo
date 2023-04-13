@@ -1,4 +1,4 @@
-package com.crud.crud.ae;
+package com.crud.crud.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
